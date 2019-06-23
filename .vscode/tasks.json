@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "C:\\Windows\\System32\\bash.exe",
+                "args": ["-c"]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "build STM32_LEARNING on WSL",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "-C",
+                "/mnt/d/Code/stm32_vscode",
+                "GCC_PATH=/mnt/d/gcc-arm-none-eabi-8-2018-q4-major/bin"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
