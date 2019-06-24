@@ -1,5 +1,15 @@
 {
     "files.associations": {
-        "main.h": "c"
+        "main.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "stdio.h": "c",
+        "ssp.h": "c",
+        "stm32f1xx_hal_gpio.h": "c",
+        "stm32f1xx_hal_rcc.h": "c",
+        "stm32f1xx_hal_def.h": "c",
+        "cstdint": "cpp",
+        "stm32f1xx_hal_eth.h": "c",
+        "stddef.h": "c"
     }
 }
